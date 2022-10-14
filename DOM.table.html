@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Tel</th>
+                <th>Address</th>
+                <th>city</th>
+                <th>state</th>
+                <th>zip</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+<script>
+    var users = [
+        {
+            "fname": "Jannae",
+            "lname": "Prellwitz",
+            "tel": "(116)359-3123",
+            "address": "6977 Mattis Ave",
+            "city": "Sandwich",
+            "state": "AK",
+            "zip": 92205
+        },
+        {
+            "fname": "Victor",
+            "lname": "Ragusa",
+            "tel": "(413)283-5226",
+            "address": "4777 Nec Rd",
+            "city": "Lehigh Acres",
+            "state": "ME",
+            "zip": 52996
+        },
+        {
+            "fname": "Rodney",
+            "lname": "Flanagan",
+            "tel": "(690)992-2641",
+            "address": "8626 Egestas St",
+            "city": "Bergen County",
+            "state": "SD",
+            "zip": 14403
+        },
+        {
+            "fname": "Kimberly",
+            "lname": "Pfeiffer",
+            "tel": "(806)326-0540",
+            "address": "8522 Nec Ave",
+            "city": "Seven Mile",
+            "state": "OK",
+            "zip": 95059
+        },
+        {
+            "fname": "Duane",
+            "lname": "Altermatt",
+            "tel": "(174)538-0886",
+            "address": "6656 Ipsum St",
+            "city": "Baton Rouge",
+            "state": "WA",
+            "zip": 86317
+        },
+        {
+            "fname": "Craig",
+            "lname": "Sacks",
+            "tel": "(377)652-8054",
+            "address": "8581 Mattis Rd",
+            "city": "Inez",
+            "state": "IN",
+            "zip": 39341
+        },
+        {
+            "fname": "Leroy",
+            "lname": "Helm",
+            "tel": "(612)195-6509",
+            "address": "3391 Amet Ave",
+            "city": "Winamac",
+            "state": "AL",
+            "zip": 43487
+        },
+        {
+            "fname": "Rocelyn",
+            "lname": "Mcmullin",
+            "tel": "(646)384-0843",
+            "address": "3849 Magna Rd",
+            "city": "Pasco",
+            "state": "WV",
+            "zip": 71162
+        },
+        {
+            "fname": "Geeta",
+            "lname": "Difrancesco",
+            "tel": "(222)540-5064",
+            "address": "4258 Pretium Rd",
+            "city": "Lake Lillian",
+            "state": "DE",
+            "zip": 56275
+        },
+        {
+            "fname": "Keith",
+            "lname": "Blackwell",
+            "tel": "(877)758-9349",
+            "address": "3 Lectus Ave",
+            "city": "Smithers",
+            "state": "DE",
+            "zip": 55231
+        }
+    ]
+
+    users.forEach((person) => {
+        var myTr = document.createElement("tr")
+        for (a in person) {
+            var myTd = document.createElement("td")
+            myTd.innerHTML = person[a]
+            myTr.appendChild(myTd)
+        }
+        document.querySelector("tbody").appendChild(myTr)
+    })
+</script>
+
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" style="color:black;">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Tel</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>zip</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        var users = [
+            {
+                "fname": "Ade",
+                "lname": "Patterson",
+                "tel": "(478)931-3150",
+                "address": "5622 Vestibulum St",
+                "city": "Hattiesburg",
+                "state": "HI",
+                "zip": 31491
+            },
+            {
+                "fname": "Talatha",
+                "lname": "Azzarello",
+                "tel": "(788)246-9113",
+                "address": "7071 Malesuada Ln",
+                "city": "Flushing",
+                "state": "SC",
+                "zip": 85764
+            },
+            {
+                "fname": "Sukanya",
+                "lname": "Authier",
+                "tel": "(302)640-4493",
+                "address": "8421 Ac Rd",
+                "city": "Delray",
+                "state": "AK",
+                "zip": 32899
+            },
+            {
+                "fname": "Marlon",
+                "lname": "Haaf",
+                "tel": "(836)391-2653",
+                "address": "8129 Et Rd",
+                "city": "St. George",
+                "state": "AL",
+                "zip": 31407
+            },
+            {
+                "fname": "Mason",
+                "lname": "Price",
+                "tel": "(385)390-8433",
+                "address": "8035 Fringilla Rd",
+                "city": "Pacoima",
+                "state": "CA",
+                "zip": 83289
+            },
+            {
+                "fname": "Julia",
+                "lname": "Gage",
+                "tel": "(167)281-0857",
+                "address": "3674 Dui Ave",
+                "city": "Bellevue",
+                "state": "OH",
+                "zip": 26560
+            },
+            {
+                "fname": "Diane",
+                "lname": "Coleman",
+                "tel": "(106)990-7023",
+                "address": "1920 Sed Dr",
+                "city": "Idaho Falls",
+                "state": "MO",
+                "zip": 36236
+            },
+            {
+                "fname": "Verna",
+                "lname": "Nabors",
+                "tel": "(303)037-4739",
+                "address": "2305 Sollicitudin Rd",
+                "city": "Fe Warren Afb",
+                "state": "OR",
+                "zip": 81068
+            },
+            {
+                "fname": "Naeem",
+                "lname": "Daly",
+                "tel": "(796)177-7968",
+                "address": "1331 Sed Dr",
+                "city": "Franklin",
+                "state": "LA",
+                "zip": 48870
+            },
+            {
+                "fname": "Johanan",
+                "lname": "Depreta",
+                "tel": "(743)402-5045",
+                "address": "6991 Dolor Dr",
+                "city": "Costa Mesa",
+                "state": "AR",
+                "zip": 71691
+            },
+            {
+                "fname": "Sritharan",
+                "lname": "Dobbins",
+                "tel": "(723)968-6484",
+                "address": "2950 Placerat Ln",
+                "city": "Littleton",
+                "state": "VT",
+                "zip": 37688
+            },
+            {
+                "fname": "Richard",
+                "lname": "Ramsey",
+                "tel": "(977)687-9381",
+                "address": "7597 Rutrum Ave",
+                "city": "Bridgewater",
+                "state": "VT",
+                "zip": 80884
+            },
+            {
+                "fname": "Thorne",
+                "lname": "Bert",
+                "tel": "(206)712-1045",
+                "address": "4606 Neque Ln",
+                "city": "Point Richmond",
+                "state": "WV",
+                "zip": 58669
+            },
+            {
+                "fname": "Yiming",
+                "lname": "Mcduff",
+                "tel": "(829)331-8629",
+                "address": "8496 Magna Rd",
+                "city": "El Paso",
+                "state": "OR",
+                "zip": 57019
+            },
+            {
+                "fname": "Irma",
+                "lname": "Shapiro",
+                "tel": "(445)061-0207",
+                "address": "7949 Tellus Dr",
+                "city": "San Gabriel Valley",
+                "state": "MD",
+                "zip": 18922
+            },
+            {
+                "fname": "Elissa",
+                "lname": "Eschenbacher",
+                "tel": "(235)347-9312",
+                "address": "3057 Amet Ct",
+                "city": "Boynton Beach",
+                "state": "IA",
+                "zip": 65151
+            },
+            {
+                "fname": "Grady",
+                "lname": "Lavallee",
+                "tel": "(839)704-3279",
+                "address": "3157 Sit Dr",
+                "city": "Baltimore",
+                "state": "UT",
+                "zip": 17126
+            },
+            {
+                "fname": "Isaiahretta",
+                "lname": "Stallone",
+                "tel": "(310)979-5056",
+                "address": "9582 Aliquam St",
+                "city": "Altoona",
+                "state": "SC",
+                "zip": 26329
+            },
+            {
+                "fname": "Patrick",
+                "lname": "York",
+                "tel": "(771)978-0066",
+                "address": "4332 At Dr",
+                "city": "Slidell",
+                "state": "CO",
+                "zip": 93218
+            },
+            {
+                "fname": "Brenda",
+                "lname": "Mauro",
+                "tel": "(277)056-0210",
+                "address": "2027 Ante Rd",
+                "city": "Fayetteville",
+                "state": "DC",
+                "zip": 70180
+            },
+            {
+                "fname": "Chassaing",
+                "lname": "Merkel",
+                "tel": "(211)155-7473",
+                "address": "9630 Lorem St",
+                "city": "Tucson",
+                "state": "AK",
+                "zip": 10682
+            },
+            {
+                "fname": "Elsuhaili",
+                "lname": "Coopr",
+                "tel": "(940)021-0353",
+                "address": "7800 Ipsum Ave",
+                "city": "Seekonk",
+                "state": "KY",
+                "zip": 39034
+            },
+            {
+                "fname": "Jon",
+                "lname": "Haga",
+                "tel": "(845)174-9535",
+                "address": "6184 Vel Rd",
+                "city": "Stony Point",
+                "state": "NY",
+                "zip": 55610
+            },
+            {
+                "fname": "Harris",
+                "lname": "Swartz",
+                "tel": "(609)782-3819",
+                "address": "4405 Augue St",
+                "city": "Lynchburg",
+                "state": "NV",
+                "zip": 29501
+            },
+            {
+                "fname": "Alonzo",
+                "lname": "Morris",
+                "tel": "(464)508-4286",
+                "address": "3646 Lacus Ct",
+                "city": "Conneaut",
+                "state": "NM",
+                "zip": 77318
+            },
+            {
+                "fname": "Chassaing",
+                "lname": "Almanza",
+                "tel": "(460)939-1063",
+                "address": "9663 Mi Ln",
+                "city": "Brighton",
+                "state": "NY",
+                "zip": 74746
+            },
+            {
+                "fname": "Pele",
+                "lname": "Jackson",
+                "tel": "(602)320-0657",
+                "address": "1838 Ac Dr",
+                "city": "Jackson Heights",
+                "state": "HI",
+                "zip": 71689
+            },
+            {
+                "fname": "Judy",
+                "lname": "Spry",
+                "tel": "(145)840-3094",
+                "address": "3469 Dolor St",
+                "city": "Austin",
+                "state": "NH",
+                "zip": 20425
+            },
+            {
+                "fname": "Atif",
+                "lname": "Knapp",
+                "tel": "(968)369-5264",
+                "address": "9109 Vel Ln",
+                "city": "Douglasville",
+                "state": "AL",
+                "zip": 99265
+            },
+            {
+                "fname": "Terrence",
+                "lname": "Marrinson",
+                "tel": "(898)662-0227",
+                "address": "9898 Et Ave",
+                "city": "Roy",
+                "state": "SD",
+                "zip": 72450
+            },
+            {
+                "fname": "Hiam",
+                "lname": "Chase",
+                "tel": "(516)874-5102",
+                "address": "3794 Porttitor St",
+                "city": "Oxford",
+                "state": "IL",
+                "zip": 31325
+            },
+            {
+                "fname": "Chareese",
+                "lname": "Knutson",
+                "tel": "(606)042-4882",
+                "address": "8523 Amet Ln",
+                "city": "Zionsville",
+                "state": "WY",
+                "zip": 59475
+            },
+            {
+                "fname": "Hope",
+                "lname": "Brenner",
+                "tel": "(507)312-3258",
+                "address": "2302 Hendrerit St",
+                "city": "Paducah",
+                "state": "OK",
+                "zip": 33473
+            },
+            {
+                "fname": "Monica",
+                "lname": "Curtis",
+                "tel": "(311)871-7279",
+                "address": "6063 Ac Ct",
+                "city": "Westwood",
+                "state": "MI",
+                "zip": 26421
+            },
+            {
+                "fname": "Monia",
+                "lname": "Williamson",
+                "tel": "(377)936-0897",
+                "address": "9250 Augue Ave",
+                "city": "Paxton",
+                "state": "SD",
+                "zip": 66647
+            },
+            {
+                "fname": "Harold",
+                "lname": "Stabile",
+                "tel": "(734)125-7309",
+                "address": "51 Porttitor Ave",
+                "city": "Madison",
+                "state": "NJ",
+                "zip": 11501
+            },
+            {
+                "fname": "Kay",
+                "lname": "Wade",
+                "tel": "(702)436-3915",
+                "address": "2011 Ac Ave",
+                "city": "Menlo Park",
+                "state": "AL",
+                "zip": 96087
+            },
+            {
+                "fname": "Timika",
+                "lname": "Masek",
+                "tel": "(848)674-9887",
+                "address": "9751 Turpis Rd",
+                "city": "Pine Mountain",
+                "state": "MO",
+                "zip": 49422
+            },
+            {
+                "fname": "Rick",
+                "lname": "Mergel",
+                "tel": "(314)369-8045",
+                "address": "5666 Quis Rd",
+                "city": "Kingwood",
+                "state": "DC",
+                "zip": 39793
+            },
+            {
+                "fname": "Marshall",
+                "lname": "Malmfeldt",
+                "tel": "(628)042-1542",
+                "address": "9156 Elementum Ct",
+                "city": "Derby",
+                "state": "OK",
+                "zip": 41354
+            },
+            {
+                "fname": "Tara",
+                "lname": "Tisi",
+                "tel": "(424)894-7275",
+                "address": "2733 Quis Rd",
+                "city": "Pharr",
+                "state": "MI",
+                "zip": 30865
+            },
+            {
+                "fname": "Irina",
+                "lname": "Steward",
+                "tel": "(286)334-9413",
+                "address": "1150 Dolor Ave",
+                "city": "Sun Prairie",
+                "state": "MS",
+                "zip": 53427
+            },
+            {
+                "fname": "Melina",
+                "lname": "Rehnke",
+                "tel": "(659)846-7573",
+                "address": "6227 Aliquam Ave",
+                "city": "Wellborn",
+                "state": "ME",
+                "zip": 25886
+            },
+            {
+                "fname": "Dainius",
+                "lname": "Flanigan",
+                "tel": "(457)848-8600",
+                "address": "9604 Sit Dr",
+                "city": "Moundridge",
+                "state": "VT",
+                "zip": 45603
+            },
+            {
+                "fname": "Neil",
+                "lname": "Weissmann",
+                "tel": "(146)284-7659",
+                "address": "685 Egestas Dr",
+                "city": "Goodyear",
+                "state": "SD",
+                "zip": 65331
+            },
+            {
+                "fname": "Guadalupe",
+                "lname": "Gorman",
+                "tel": "(184)790-7517",
+                "address": "4123 Scelerisque Rd",
+                "city": "Streamwood",
+                "state": "IL",
+                "zip": 31980
+            },
+            {
+                "fname": "Terry",
+                "lname": "Teti",
+                "tel": "(863)425-5480",
+                "address": "8089 Massa Dr",
+                "city": "Aurora",
+                "state": "RI",
+                "zip": 25284
+            },
+            {
+                "fname": "Toya",
+                "lname": "Kramarsky",
+                "tel": "(193)335-2374",
+                "address": "6579 Sapien Ct",
+                "city": "Green Bay",
+                "state": "WA",
+                "zip": 73756
+            },
+            {
+                "fname": "Agnes",
+                "lname": "Reith",
+                "tel": "(906)632-8564",
+                "address": "7851 Etiam Ln",
+                "city": "Winter Garden",
+                "state": "SC",
+                "zip": 43344
+            },
+            {
+                "fname": "Kate",
+                "lname": "Downing",
+                "tel": "(663)240-6770",
+                "address": "1446 Mi Ln",
+                "city": "Concord",
+                "state": "CT",
+                "zip": 25388
+            }
+        ]
+
+        users.forEach((person) => {
+            var myTr = document.createElement("tr")
+            for (a in person) {
+               var myTd = document.createElement("td")
+               myTd.innerHTML = person[a]
+               myTr.appendChild(myTd)
+            }
+            document.querySelector("tbody").appendChild(myTr)
+        })
+    </script>
+</body>
+
+</html>
